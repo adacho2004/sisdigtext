@@ -10,7 +10,7 @@ resource "ibm_resource_instance" "resource_instance" {
   name              = "${var.service_instance_name}"
   service           = "sysdig-monitor"
   plan              = "graduated-tier"
-  location          = "jp_tok"
+  location          = "jp-tok"
   resource_group_id = "${data.ibm_resource_group.group.id}"
   tags              = ["${var.tag1}", "${var.tag2}"]
 
