@@ -7,7 +7,7 @@ data "ibm_resource_group" "group" {
 }
 
 resource "ibm_resource_instance" "resource_instance" {
-  name              = "${"var.service_instance_name}"
+  name              = "${var.service_instance_name}"
   service           = "sysdig_monitor"
   plan              = "graduated-tier"
   location          = "jp_tok"
